@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Lights</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/bulb.css" />
+    <link rel="stylesheet" href="styles/controls.css" />
+    <link rel="stylesheet" href="styles/pickers.css" />
+</head>
+
+<body>
+    <main class="app">
+        <h1 class="app-title">Christmas Lights</h1>
+
+        <section class="stage">
+            <!-- Populated by dom.js -->
+        </section>
+
+        <section class="controls">
+            <div class="effect-row" id="effect-row">
+                <button class="effect-btn active" data-effect="ripple">Ripple</button>
+                <button class="effect-btn" data-effect="randomBlink">Random</button>
+                <button class="effect-btn" data-effect="alternate">Alternate</button>
+                <button class="effect-btn" data-effect="wave">Wave</button>
+                <button class="effect-btn" data-effect="chase">Chase</button>
+                <button class="effect-btn" data-effect="twinkle">Twinkle</button>
+            </div>
+
+            <button class="btn-toggle" id="btn-toggle">Start</button>
+
+            <div class="control-row">
+                <label for="speed-slider">Speed</label>
+                <input type="range" id="speed-slider" min="80" max="1000" step="20" value="300" />
+                <span id="speed-val">300ms</span>
+            </div>
+
+            <div class="control-row">
+                <label for="intensity-slider">Intensity</label>
+                <input type="range" id="intensity-slider" min="1.1" max="2.5" step="0.1" value="1.3" />
+                <span id="intensity-val">1.3</span>
+            </div>
+
+            <div class="control-row">
+                <label for="size-slider">Size</label>
+                <input type="range" id="size-slider" min="28" max="72" step="4" value="48" />
+                <span id="size-val">48px</span>
+            </div>
+
+            <div class="control-row">
+                <label for="rows-slider">Rows</label>
+                <input type="range" id="rows-slider" min="1" max="7" step="1" value="1" />
+                <span id="rows-val">1</span>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
