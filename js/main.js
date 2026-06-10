@@ -8,7 +8,7 @@ import { dimAll, clearHandles } from './bulb.js';
 import { effects } from './effects/index.js';
 
 let running = false;
-let activeEffect = 'ripple';
+let activeEffect = 'wave';
 
 // --- DOM refs ---
 const btnToggle = document.getElementById('btn-toggle');
