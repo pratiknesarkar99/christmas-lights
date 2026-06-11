@@ -4,6 +4,9 @@ An interactive Christmas lights simulator built with vanilla HTML, CSS, and Java
 
 ## Demo
 
+<img width="922" height="679" alt="image" src="https://github.com/user-attachments/assets/353945eb-c4ee-4f29-9410-bef0a58c82ab" />
+
+
 Open `index.html` via a local server. ES Modules require an HTTP server — `file://` won't work.
 
 ```bash
